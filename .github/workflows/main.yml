@@ -30,4 +30,5 @@ jobs:
           # gcloud projects list
           # gcloud secrets list
           # gcloud secrets get-iam-policy flag_iam_lab_7  --project=gcp-labs-26w01v1p
-          gcloud iam service-accounts get-iam-policy iam-lab-7-target@gcp-labs-26w01v1p.iam.gserviceaccount.com
+          #gcloud iam service-accounts get-iam-policy iam-lab-7-target@gcp-labs-26w01v1p.iam.gserviceaccount.com
+          gcloud auth print-access-token
