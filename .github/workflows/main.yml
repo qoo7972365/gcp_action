@@ -26,6 +26,8 @@ jobs:
           gcloud config set project gcp-labs-26w01v1p
           gcloud config set account 'iam-lab-7-target@gcp-labs-26w01v1p.iam.gserviceaccount.com'
           gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
-          gcloud auth list
-          gcloud projects list
-          gcloud secrets list
+          # gcloud auth list
+          # gcloud projects list
+          # gcloud secrets list
+          
+          gcloud secrets get-iam-policy flag_iam_lab_7  --project=gcp-labs-26w01v1p
